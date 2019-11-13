@@ -1,0 +1,8 @@
+#!c:\users\dhruv\pycharmprojects\timberplayer\venv\scripts\python.exe
+"""
+This is pmg command in bin directory, runs pmg.py module in pymodel directory
+"""
+
+import pmg  # find pmg.py anywhere on Python path
+
+pmg.main()

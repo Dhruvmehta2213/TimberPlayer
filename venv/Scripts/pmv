@@ -1,0 +1,8 @@
+#!c:\users\dhruv\pycharmprojects\timberplayer\venv\scripts\python.exe
+"""
+This is pmv command in bin directory, runs pmv.py module in pymodel directory
+"""
+
+import pmv  # find pmv.py anywhere on Python path
+
+pmv.main()

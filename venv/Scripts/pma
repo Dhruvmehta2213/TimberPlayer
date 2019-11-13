@@ -1,0 +1,8 @@
+#!c:\users\dhruv\pycharmprojects\timberplayer\venv\scripts\python.exe
+"""
+This is pma command in bin directory, runs pma.py module in pymodel directory
+"""
+
+import pma  # find pma.py anywhere on Python path
+
+pma.main()

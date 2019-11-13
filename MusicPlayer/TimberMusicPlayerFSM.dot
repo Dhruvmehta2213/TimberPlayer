@@ -1,0 +1,17 @@
+digraph TimberMusicPlayerFSM {
+
+  // Nodes
+  0 [ style=filled, shape=ellipse, peripheries=1, fillcolor=lightgray,
+      tooltip="{'TimberMusicPlayer': {'play': False, 'pause': False}}" ]
+  1 [ style=filled, shape=ellipse, peripheries=2, fillcolor=white,
+      tooltip="{'TimberMusicPlayer': {'play': True, 'pause': False}}" ]
+  2 [ style=filled, shape=ellipse, peripheries=1, fillcolor=white,
+      tooltip="{'TimberMusicPlayer': {'play': False, 'pause': True}}" ]
+
+  // Transitions
+  0 -> 1 [ label="PlayMusic()", tooltip="PlayMusic()" ]
+  1 -> 0 [ label="InitializePlayer()", tooltip="InitializePlayer()" ]
+  1 -> 2 [ label="PauseMusic()", tooltip="PauseMusic()" ]
+  2 -> 1 [ label="PlayMusic()", tooltip="PlayMusic()" ]
+  2 -> 0 [ label="InitializePlayer()", tooltip="InitializePlayer()" ]
+}
